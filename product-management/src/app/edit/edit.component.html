@@ -1,0 +1,7 @@
+<h1>Edit Product</h1>
+
+<form #productform = 'ngForm' (submit)="editItem()">
+  Title: <input type="text" name="title" value="" [(ngModel)]="currproduct.title"><br>
+  Price: <input type="text" name="price" value="" [(ngModel)]="currproduct.price"><br>
+  <input type="submit" value="Create"><br>
+</form>

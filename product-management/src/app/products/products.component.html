@@ -1,0 +1,9 @@
+<h1>Products List</h1>
+
+<div *ngFor="let product of productslist; let i = index">
+	
+	<p>{{ product.title }}</p>
+	<p>${{ product.price }}</p>
+	<p><button type="button" [routerLink]="['/products',i]">EDIT</button></p>
+	<p><button type="button" (click)="deleteProduct(i)">Delete</button></p>
+</div>
